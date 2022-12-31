@@ -255,6 +255,8 @@ fn platform() -> String {
   let os = "mac";
   #[cfg(target_os = "windows")]
   let os = "windows";
+  #[cfg(target_os = "android")]
+  let os = "android"
 
   #[cfg(target_arch = "x86_64")]
   let arch = "amd64";
